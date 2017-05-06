@@ -6,11 +6,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { TimerComponent } from './components/timer/timer.component';
+import { UrlshortComponent } from './components/urlshort/urlshort.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TimerComponent,
+    UrlshortComponent,
   ],
   imports: [
     BrowserAnimationsModule,

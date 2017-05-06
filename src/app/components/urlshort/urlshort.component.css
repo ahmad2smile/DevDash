@@ -1,0 +1,28 @@
+
+.input-field{
+    position: relative;
+}
+
+.input-field > input{
+    display: inline-block;
+}
+
+.btn-floating{
+    position: absolute;
+    top: 3px;
+    right: 0;
+}
+
+.resultContent, .urlInContent{
+    padding-top: 13px;
+    padding-bottom: 10px;
+}
+.resultInput, .urlInInput, .input-field{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    box-shadow: 0 0 0px 1000px white inset !important;
+}

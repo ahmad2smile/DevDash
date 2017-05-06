@@ -16,6 +16,11 @@ export class TimerComponent implements OnInit {
       var clock = new FlipClock($('.flipClock'), {
           clockFace: 'TwelveHourClock'
     });
+    $(`
+        .flipClock > .flip-clock-divider:last-of-type,
+        .flipClock ul:nth-child(7),
+        .flipClock ul:nth-child(8),
+        .flip-clock-meridium`).remove();
   }
 
 }
