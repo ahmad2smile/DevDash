@@ -37,15 +37,9 @@ html{
    ██    ██    ██ ██   ██      ██    ██
    ██     ██████  ██   ██ ███████    ██
 */
-#toast-container{
-    width: 200px !important;
-    left: 0 !important;
-    right: 0 !important;
-    top: 0 !important;
-}
 
 .toast{
-    background: rgba(0, 0, 0, 0.2) !important;
+    background: #90caf9 !important;
     color: #000 !important;
 }
 
