@@ -1,24 +1,41 @@
 
 <div class="row">
-    <div class="col l12 m12 s12">
-        <div class="row">
-            <div class="col l4 m6 s12">
-                <app-urlshort></app-urlshort>
-            </div>
-            <div class="col l4 m6 s12"></div>
-            <div class="col l4 m6 s12">
-                <app-timer></app-timer>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col l4 m6 s12"></div>
-            <div class="col l4 m6 s12"></div>
-            <div class="col l4 m6 s12"></div>
-        </div>
-        <div class="row">
-            <div class="col l4 m6 s12"></div>
-            <div class="col l4 m6 s12"></div>
-            <div class="col l4 m6 s12"></div>
-        </div>
-    </div>
+	<div class="col l12 m12 s12">
+		<div class="row">
+			<div class="col l4 m6 s12">
+				<app-urlshort [clickedCard]="clickedCard" [cardExpanded]="cardExpanded">
+					<a href="javascript:void(0)" (click)="cardClickHandler($event)">
+						<icon-fullscreen *ngIf="!cardExpanded; else elseBlock"></icon-fullscreen>
+						<ng-template #elseBlock>
+							<icon-normalscreen></icon-normalscreen>
+						</ng-template>
+					</a>
+				</app-urlshort>
+			</div>
+			<div class="col l4 m6 s12"></div>
+			<div class="col l4 m6 s12">
+				<app-timer
+					(onExpandEvent)="expandEventHandler($event)"
+					[clickedCard]="clickedCard"
+					[cardExpanded]="cardExpanded"
+					><a href="javascript:void(0)" (click)="cardClickHandler($event)">
+						<icon-fullscreen *ngIf="!cardExpanded; else elseBlock"></icon-fullscreen>
+						<ng-template #elseBlock>
+							<icon-normalscreen></icon-normalscreen>
+						</ng-template>
+					</a>
+				</app-timer>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col l4 m6 s12"></div>
+			<div class="col l4 m6 s12"></div>
+			<div class="col l4 m6 s12"></div>
+		</div>
+		<div class="row">
+			<div class="col l4 m6 s12"></div>
+			<div class="col l4 m6 s12"></div>
+			<div class="col l4 m6 s12"></div>
+		</div>
+	</div>
 </div>

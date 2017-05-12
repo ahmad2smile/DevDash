@@ -53,4 +53,21 @@ html{
 
 .dashboardCard{
     height: 200px;
+	position: relative;
+}
+
+/*
+██  ██████  ██████  ███    ██ ███████
+██ ██      ██    ██ ████   ██ ██
+██ ██      ██    ██ ██ ██  ██ ███████
+██ ██      ██    ██ ██  ██ ██      ██
+██  ██████  ██████  ██   ████ ███████
+*/
+.app-icon-parent{
+	position: relative;
+}
+
+.app-icon{
+	position: absolute;
+	right: 0;
 }

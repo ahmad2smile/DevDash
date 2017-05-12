@@ -1,5 +1,6 @@
 
-<div class="card dashboardCard">
+<div [hidden]="!renderComponent" class="card dashboardCard">
+	<ng-content></ng-content>
     <div class="card-content">
         <div class="card">
             <div class="card-content urlInContent">

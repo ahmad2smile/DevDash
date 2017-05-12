@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import { TimerComponent } from './components/timer/timer.component';
 import { UrlshortComponent } from './components/urlshort/urlshort.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { FullscreenComponent } from './components/shared/fullscreen/fullscreen.component';
+import { NormalscreenComponent } from './components/shared/normalscreen/normalscreen.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
     TimerComponent,
     UrlshortComponent,
     DashboardComponent,
+    FullscreenComponent,
+    NormalscreenComponent,
   ],
   imports: [
     BrowserAnimationsModule,
