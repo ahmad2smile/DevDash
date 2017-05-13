@@ -5,6 +5,7 @@
 
 .input-field > input{
     display: inline-block;
+	min-width: 323px;
 }
 
 .btn-floating{
